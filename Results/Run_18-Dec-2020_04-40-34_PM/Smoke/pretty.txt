@@ -1,0 +1,162 @@
+Feature: Login
+  As a user, I want to be able to login to the application
+  when I present valid credentials
+
+  @self-healing
+  Scenario: Login with invalid username and invalid password                 # Login.feature:7
+    When I login using the invalid username abc and the invalid password xyz # LoginStepDefs.i_login_using_invalid_username_invalid_password(String,String)
+      java.lang.AssertionError: A detailed report will be created at 'C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report'. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+      
+      3 check(s) in 'cucumber.api.testng.AbstractTestNGCucumberTests' found the following difference(s):
+      Test 'feature' has 16 difference(s) in 3 state(s):
+      00 resulted in:
+      	input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+      		id:
+      		  expected="username",
+      		    actual="email"
+      01 resulted in:
+      	Metadata Differences:
+      	  Please note that these differences do not affect the result and are not included in the difference count.
+      		window.height:
+      		  expected="806",
+      		    actual="840"
+      		window.width:
+      		  expected="1051",
+      		    actual="1552"
+      	html () at 'html[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=1036,height=674]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=1536,height=710]"
+      	div (login) at 'html[1]/body[1]/div[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=0,height=-145]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=0,height=-181]"
+      	div (div) at 'html[1]/body[1]/div[1]/div[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=38,y=90,width=-76,height=-90]",
+      		    actual="java.awt.Rectangle[x=198,y=90,width=-396,height=-90]"
+      		margin-left:
+      		  expected="38px",
+      		    actual="198px"
+      		margin-right:
+      		  expected="38px",
+      		    actual="198px"
+      		max-width:
+      		  expected="960px",
+      		    actual="1140px"
+      	div (logincolumn) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=240,y=0,width=-480,height=0]",
+      		    actual="java.awt.Rectangle[x=285,y=0,width=-570,height=0]"
+      	label (email) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/label[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=-337,height=-46]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=-427,height=-46]"
+      	br (br) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/br[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=41,y=18,width=-378,height=-70]",
+      		    actual="java.awt.Rectangle[x=41,y=18,width=-468,height=-70]"
+      	input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+      		id:
+      		  expected="username",
+      		    actual="email"
+      	label (password) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/label[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=-308,height=-46]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=-398,height=-46]"
+      	br (br-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/br[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=70,y=18,width=-378,height=-70]",
+      		    actual="java.awt.Rectangle[x=70,y=18,width=-468,height=-70]"
+      	label (label) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[3]/label[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=-258,height=-46]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=-348,height=-46]"
+      	br (br-2) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[3]/br[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=120,y=18,width=-378,height=-70]",
+      		    actual="java.awt.Rectangle[x=120,y=18,width=-468,height=-70]"
+      	input (submit) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[3]/input[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=32,width=-304,height=-32]",
+      		    actual="java.awt.Rectangle[x=0,y=32,width=-394,height=-32]"
+      	a (register_here) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/a[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=285,y=1,width=-285,height=-2]",
+      		    actual="java.awt.Rectangle[x=375,y=1,width=-375,height=-2]"
+      02 resulted in:
+      	Metadata Differences:
+      	  Please note that these differences do not affect the result and are not included in the difference count.
+      		window.height:
+      		  expected="806",
+      		    actual="840"
+      		window.width:
+      		  expected="1051",
+      		    actual="1552"
+      	html () at 'html[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=1036,height=674]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=1536,height=710]"
+      	div (login) at 'html[1]/body[1]/div[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=0,height=-145]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=0,height=-181]"
+      	div (div) at 'html[1]/body[1]/div[1]/div[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=38,y=90,width=-76,height=-90]",
+      		    actual="java.awt.Rectangle[x=198,y=90,width=-396,height=-90]"
+      		margin-left:
+      		  expected="38px",
+      		    actual="198px"
+      		margin-right:
+      		  expected="38px",
+      		    actual="198px"
+      		max-width:
+      		  expected="960px",
+      		    actual="1140px"
+      	div (logincolumn) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=240,y=0,width=-480,height=0]",
+      		    actual="java.awt.Rectangle[x=285,y=0,width=-570,height=0]"
+      	label (email) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/label[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=-337,height=-46]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=-427,height=-46]"
+      	br (br) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/br[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=41,y=18,width=-378,height=-70]",
+      		    actual="java.awt.Rectangle[x=41,y=18,width=-468,height=-70]"
+      	input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+      		id:
+      		  expected="username",
+      		    actual="email"
+      	label (password) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/label[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=-308,height=-46]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=-398,height=-46]"
+      	br (br-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/br[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=70,y=18,width=-378,height=-70]",
+      		    actual="java.awt.Rectangle[x=70,y=18,width=-468,height=-70]"
+      	label (label) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[3]/label[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=0,width=-258,height=-46]",
+      		    actual="java.awt.Rectangle[x=0,y=0,width=-348,height=-46]"
+      	br (br-2) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[3]/br[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=120,y=18,width=-378,height=-70]",
+      		    actual="java.awt.Rectangle[x=120,y=18,width=-468,height=-70]"
+      	input (submit) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[3]/input[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=0,y=32,width=-304,height=-32]",
+      		    actual="java.awt.Rectangle[x=0,y=32,width=-394,height=-32]"
+      	a (register_here) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/a[1]':
+      		outline:
+      		  expected="java.awt.Rectangle[x=285,y=1,width=-285,height=-2]",
+      		    actual="java.awt.Rectangle[x=375,y=1,width=-375,height=-2]"
+      	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+      	at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)
+      	at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:35)
+      	at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_invalid_username_invalid_password(LoginStepDefs.java:26)
+      	at ✽.When I login using the invalid username abc and the invalid password xyz(Login.feature:8)
+

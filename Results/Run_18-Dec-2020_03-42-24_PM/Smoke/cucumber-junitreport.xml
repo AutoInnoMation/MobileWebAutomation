@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.498167">
+<testcase classname="Login" name="Login with invalid username and invalid password" time="14.498167">
+<failure message="java.lang.AssertionError: A detailed report will be created at 'C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report'. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).&#10;&#10;3 check(s) in 'cucumber.api.testng.AbstractTestNGCucumberTests' found the following difference(s):&#10;Test 'feature' has 1 difference(s) in 3 state(s):&#10;00 resulted in:&#10;&#9;input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':&#10;&#9;&#9;id:&#10;&#9;&#9;  expected=&quot;username&quot;,&#10;&#9;&#9;    actual=&quot;email&quot;&#10;01 resulted in:&#10;&#9;input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':&#10;&#9;&#9;id:&#10;&#9;&#9;  expected=&quot;username&quot;,&#10;&#9;&#9;    actual=&quot;email&quot;&#10;02 resulted in:&#10;&#9;input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':&#10;&#9;&#9;id:&#10;&#9;&#9;  expected=&quot;username&quot;,&#10;&#9;&#9;    actual=&quot;email&quot;&#13;&#10;&#9;at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)&#13;&#10;&#9;at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)&#13;&#10;&#9;at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:30)&#13;&#10;&#9;at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_invalid_username_invalid_password(LoginStepDefs.java:26)&#13;&#10;&#9;at ✽.When I login using the invalid username abc and the invalid password xyz(Login.feature:8)&#13;&#10;"><![CDATA[When I login using the invalid username abc and the invalid password xyz....failed
+
+StackTrace:
+java.lang.AssertionError: A detailed report will be created at 'C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report'. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+
+3 check(s) in 'cucumber.api.testng.AbstractTestNGCucumberTests' found the following difference(s):
+Test 'feature' has 1 difference(s) in 3 state(s):
+00 resulted in:
+	input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+		id:
+		  expected="username",
+		    actual="email"
+01 resulted in:
+	input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+		id:
+		  expected="username",
+		    actual="email"
+02 resulted in:
+	input (email-1) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+		id:
+		  expected="username",
+		    actual="email"
+	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+	at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)
+	at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:30)
+	at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_invalid_username_invalid_password(LoginStepDefs.java:26)
+	at ✽.When I login using the invalid username abc and the invalid password xyz(Login.feature:8)
+]]></failure>
+</testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+Feature: Login
+  As a user, I want to be able to login to the application
+  when I present valid credentials
+
+  @self-healing
+  Scenario: Login with invalid username and invalid password                 # Login.feature:7
+    When I login using the invalid username abc and the invalid password xyz # LoginStepDefs.i_login_using_invalid_username_invalid_password(String,String)
+      java.lang.AssertionError: 'cucumber.api.testng.AbstractTestNGCucumberTests': No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...
+      	src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.00.recheck
+      	src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.01.recheck
+      	src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.02.recheck
+      	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+      	at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)
+      	at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:35)
+      	at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_invalid_username_invalid_password(LoginStepDefs.java:26)
+      	at ✽.When I login using the invalid username abc and the invalid password xyz(Login.feature:8)
+

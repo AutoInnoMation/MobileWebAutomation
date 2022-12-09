@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Run_Test_Cukes">
+              <span class="suite-name border-failed">Run Test Cukes</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Run_Test_Cukes">
+                    <span>C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\src\test\resources\TestNGRunSmokeTests.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Run_Test_Cukes">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Run_Test_Cukes">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Run_Test_Cukes">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Run_Test_Cukes">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Run_Test_Cukes">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Run_Test_Cukes">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Run_Test_Cukes" class="hide-methods failed suite-Run_Test_Cukes"> (hide)</a> <!-- hide-methods failed suite-Run_Test_Cukes -->
+                      <a href="#" panel-name="suite-Run_Test_Cukes" class="show-methods failed suite-Run_Test_Cukes"> (show)</a> <!-- show-methods failed suite-Run_Test_Cukes -->
+                    </span>
+                    <div class="method-list-content failed suite-Run_Test_Cukes">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Test_Cukes" title="com.CucumberCraft.TestNGrunners.RunCucumberTests_Smoke" hash-for-method="Smoke Tests using chrome2 - feature - (Login)">Smoke Tests using chrome2 - feature - (Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Run_Test_Cukes -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Run_Test_Cukes" class="panel Run_Test_Cukes">
+          <div class="suite-Run_Test_Cukes-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.CucumberCraft.TestNGrunners.RunCucumberTests_Smoke</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke Tests using chrome2 - feature - (Login)">
+                  </a> <!-- Smoke Tests using chrome2 - feature - (Login) -->
+                  <span class="method-name">Smoke Tests using chrome2 - feature - </span>
+                  <span class="parameters">(Login)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: A detailed report will be created at &apos;C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report&apos;. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+
+3 check(s) in &apos;cucumber.api.testng.AbstractTestNGCucumberTests&apos; found the following difference(s):
+Test &apos;feature&apos; has 2 difference(s) in 3 state(s):
+00 resulted in:
+	input (username) at &apos;html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]&apos;:
+		id:
+		  expected=&quot;username&quot;,
+		    actual=&quot;email&quot;, breaks=&quot;AbstractTestNGCucumberTests.java:21&quot;
+01 resulted in:
+	input (username) at &apos;html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]&apos;:
+		id:
+		  expected=&quot;username&quot;,
+		    actual=&quot;email&quot;
+02 resulted in:
+	input (username) at &apos;html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]&apos;:
+		id:
+		  expected=&quot;username&quot;,
+		    actual=&quot;email&quot;
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: A detailed report will be created at &apos;C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report&apos;. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+
+3 check(s) in &apos;cucumber.api.testng.AbstractTestNGCucumberTests&apos; found the following difference(s):
+Test &apos;feature&apos; has 2 difference(s) in 3 state(s):
+00 resulted in:
+	input (username) at &apos;html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]&apos;:
+		id:
+		  expected=&quot;username&quot;,
+		    actual=&quot;email&quot;, breaks=&quot;AbstractTestNGCucumberTests.java:21&quot;
+01 resulted in:
+	input (username) at &apos;html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]&apos;:
+		id:
+		  expected=&quot;username&quot;,
+		    actual=&quot;email&quot;
+02 resulted in:
+	input (username) at &apos;html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]&apos;:
+		id:
+		  expected=&quot;username&quot;,
+		    actual=&quot;email&quot;
+	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+	at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)
+	at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:35)
+	at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_the_username_and_the_password(LoginStepDefs.java:44)
+	at ✽.When I login using the username &quot;test@test.com&quot; and the password &quot;test&quot;(Login.feature:8)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Run_Test_Cukes-class-failed -->
+        </div> <!-- panel Run_Test_Cukes -->
+        <div panel-name="test-xml-Run_Test_Cukes" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\src\test\resources\TestNGRunSmokeTests.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Run Test Cukes&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.CucumberCraft.supportLibraries.WebDriverListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Smoke Tests using chrome2&quot;&gt;
+    &lt;parameter name=&quot;BrowserName&quot; value=&quot;CHROME&quot;/&gt;
+    &lt;parameter name=&quot;ExecutionMode&quot; value=&quot;LOCAL&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.CucumberCraft.TestNGrunners.RunCucumberTests_Smoke&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke Tests using chrome2 --&gt;
+&lt;/suite&gt; &lt;!-- Run Test Cukes --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Run_Test_Cukes" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Run Test Cukes</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke Tests using chrome2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Run_Test_Cukes" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Run Test Cukes</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Smoke Tests using chrome2 - feature - </span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Run_Test_Cukes" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Run Test Cukes</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Run_Test_Cukes');
+function tableData_Run_Test_Cukes() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Smoke Tests using chrome2 - feature - ')
+data.setCell(0, 2, 'com.CucumberCraft.TestNGrunners.RunCucumberTests_Smoke')
+data.setCell(0, 3, 25105);
+window.suiteTableData['Run_Test_Cukes']= { tableData: data, tableDiv: 'times-div-Run_Test_Cukes'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Run_Test_Cukes">
+              </div> <!-- times-div-Run_Test_Cukes -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Run_Test_Cukes" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Run Test Cukes</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Run_Test_Cukes" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Run_Test_Cukes" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CucumberCraft.TestNGrunners.RunCucumberTests_Smoke</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke Tests using chrome2 - feature - (Login)</span>
+                <span class="method-start">303 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">25411 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">test</span>
+                <span class="method-start">25463 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">copyStoredReports</span>
+                <span class="method-start">25610 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

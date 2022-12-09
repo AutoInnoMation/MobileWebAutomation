@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.322925">
+<testcase classname="Login" name="Login with invalid username and invalid password" time="14.322925">
+<failure message="java.lang.AssertionError: 'cucumber.api.testng.AbstractTestNGCucumberTests': No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...&#10;&#9;src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.00.recheck&#10;&#9;src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.01.recheck&#10;&#9;src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.02.recheck&#13;&#10;&#9;at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)&#13;&#10;&#9;at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)&#13;&#10;&#9;at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:35)&#13;&#10;&#9;at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_the_username_and_the_password(LoginStepDefs.java:44)&#13;&#10;&#9;at ✽.When I login using the username &quot;test@test.com&quot; and the password &quot;test&quot;(Login.feature:8)&#13;&#10;"><![CDATA[When I login using the username "test@test.com" and the password "test".....failed
+
+StackTrace:
+java.lang.AssertionError: 'cucumber.api.testng.AbstractTestNGCucumberTests': No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...
+	src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.00.recheck
+	src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.01.recheck
+	src\test\resources\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests\feature.02.recheck
+	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+	at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)
+	at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:35)
+	at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_the_username_and_the_password(LoginStepDefs.java:44)
+	at ✽.When I login using the username "test@test.com" and the password "test"(Login.feature:8)
+]]></failure>
+</testcase>
+</testsuite>

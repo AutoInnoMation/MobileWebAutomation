@@ -1,0 +1,32 @@
+Feature: Login
+  As a user, I want to be able to login to the application
+  when I present valid credentials
+
+  @self-healing
+  Scenario: Login with invalid username and invalid password                # Login.feature:7
+    When I login using the username "test@test.com" and the password "test" # LoginStepDefs.i_login_using_the_username_and_the_password(String,String)
+      java.lang.AssertionError: A detailed report will be created at 'C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report'. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+      
+      3 check(s) in 'cucumber.api.testng.AbstractTestNGCucumberTests' found the following difference(s):
+      Test 'feature' has 2 difference(s) in 3 state(s):
+      00 resulted in:
+      	input (username) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+      		id:
+      		  expected="username",
+      		    actual="email", breaks="AbstractTestNGCucumberTests.java:21"
+      01 resulted in:
+      	input (username) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+      		id:
+      		  expected="username",
+      		    actual="email"
+      02 resulted in:
+      	input (username) at 'html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]':
+      		id:
+      		  expected="username",
+      		    actual="email"
+      	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+      	at de.retest.web.selenium.AutocheckingRecheckDriver.capTest(AutocheckingRecheckDriver.java:84)
+      	at com.CucumberCraft.pageObjects.LoginPage.login(LoginPage.java:35)
+      	at com.CucumberCraft.stepDefinitions.LoginStepDefs.i_login_using_the_username_and_the_password(LoginStepDefs.java:44)
+      	at ✽.When I login using the username "test@test.com" and the password "test"(Login.feature:8)
+

@@ -1,0 +1,106 @@
+Feature: Login
+  As a user, I want to be able to login to the application
+  when I present valid credentials
+Failure in after hook:CukeHooks.embedScreenshot(Scenario)
+Message: java.lang.AssertionError: A detailed report will be created at 'C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report'. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+
+3 check(s) in 'cucumber.api.testng.AbstractTestNGCucumberTests' found the following difference(s):
+Test 'feature' has 2 difference(s) in 3 state(s):
+01 resulted in:
+	No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...
+02 resulted in:
+	No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...
+	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+	at de.retest.recheck.RecheckImpl.cap(RecheckImpl.java:201)
+	at de.retest.web.selenium.AutocheckingRecheckDriver.cap(AutocheckingRecheckDriver.java:90)
+	at de.retest.web.selenium.AutocheckingRecheckDriver.quit(AutocheckingRecheckDriver.java:110)
+	at com.CucumberCraft.stepDefinitions.CukeHooks.embedScreenshot(CukeHooks.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+      java.lang.AssertionError: A detailed report will be created at 'C:\arnab\CRAFT_Cucumber\CRAFT_Cucumber\target\test-classes\retest\recheck\cucumber.api.testng.AbstractTestNGCucumberTests.report'. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+      
+      3 check(s) in 'cucumber.api.testng.AbstractTestNGCucumberTests' found the following difference(s):
+      Test 'feature' has 2 difference(s) in 3 state(s):
+      01 resulted in:
+      	No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...
+      02 resulted in:
+      	No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...
+      	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:189)
+      	at de.retest.recheck.RecheckImpl.cap(RecheckImpl.java:201)
+      	at de.retest.web.selenium.AutocheckingRecheckDriver.cap(AutocheckingRecheckDriver.java:90)
+      	at de.retest.web.selenium.AutocheckingRecheckDriver.quit(AutocheckingRecheckDriver.java:110)
+      	at com.CucumberCraft.stepDefinitions.CukeHooks.embedScreenshot(CukeHooks.java:156)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+      	at java.lang.reflect.Method.invoke(Unknown Source)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+      	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+      	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+      	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+      	at java.lang.reflect.Method.invoke(Unknown Source)
+      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+      	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+      	at org.testng.TestRunner.run(TestRunner.java:602)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+      	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+      	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+      	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+      	at java.util.concurrent.FutureTask.run(Unknown Source)
+      	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+      	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+      	at java.lang.Thread.run(Unknown Source)
+
+
+  @self-healing
+  Scenario: Login with invalid username and invalid password                 # Login.feature:7
+    When I login using the invalid username abc and the invalid password xyz # LoginStepDefs.i_login_using_invalid_username_invalid_password(String,String)

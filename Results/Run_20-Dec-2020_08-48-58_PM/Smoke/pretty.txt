@@ -1,0 +1,7 @@
+Feature: Login
+  As a user, I want to be able to login to the application
+  when I present valid credentials
+
+  @self-healing
+  Scenario: Login with invalid username and invalid password                # Login.feature:7
+    When I login using the username "test@test.com" and the password "test" # LoginStepDefs.i_login_using_the_username_and_the_password(String,String)
